@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .cardcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+</style>
+
+<body style="background-color:black; color:white">
+    <div class="mySlides w3-display-container w3-center" style=" margin:0 ">
+        <img src="https://cdn.discordapp.com/attachments/1015233182209159201/1157022970909298778/Naamloos.png?ex=6517191c&is=6515c79c&hm=4521b9bea2475b004d7031b63e2e09ce019a6d6a0d59791a3bacf7016e40c4b3&" style="width:100%">
+        <div class="overlay-text">
+            <h3>Welkom bij de website van Cafetaria de vittige handook</h3>
+            <p>Op deze website kunt u een bestelling plaatsen voor het ophalen bij ons.</p>
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://cdn.discordapp.com/attachments/1015233182209159201/1156930263645949976/LoadedFries-Favorflav-916x458.png?ex=6516c2c5&is=65157145&hm=de2d21c9a1ddc435743bfe40f0c53f4c3fcc2a5cd5028020865b20ecb538e353&" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>Frietje Extra speciaal!!!!</h3>
+            <p><b>Er staat een nieuw gerecht op ons menu frietje, extra speciaal!!!!</b></p>
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://cdn.discordapp.com/attachments/1015233182209159201/1156937456260747394/Schermafbeelding_2023-09-28_143026.jpg?ex=6516c978&is=651577f8&hm=dfe602abaf1f0e1275856184eddad1cd4dd88952126015eb6b7294e49b071554&" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>15% korting op de Jos Brinkie!!!!!</h3>
+            <p><b>Het is weer oktober en dat kan maar een ding betekenen, het is de maand van de Jos Brinkie</b></p>
+        </div>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 6000);
+        }
+    </script>
+    <br />
+    <br />
+    <h2>Populaire Producten</h2>
+    <hr />
+
+    <div class="cardcontainer">
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+            <div class="card-header"><img src="https://cdn.discordapp.com/attachments/1015233182209159201/1157288472021839892/29512948_652505005141152_1601506864166600704_o.png?ex=65181061&is=6516bee1&hm=275dca7f52004194bfafd19b6c8773620dc33b78d6618b0cb60ea785b245a94c&" width="290" height="280" /></div>
+            <div class="card-body">
+                <h4 class="card-title">Frikandel</h4>
+                <p class="card-text">wist je dat er meer dan 30 frikandellen per dag bij ons besteld word?</p>
+                <a class="nav-link text-light" asp-area="" asp-controller="Menu" asp-action="Index"><button class="btn btn-secondary my-2 my-sm-0 bg-danger" type="submit">Ga naar menu </button> </a>
+            </div>
+        </div>
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+            <div class="card-header"><img src="https://cdn.discordapp.com/attachments/1015233182209159201/1157291909719535737/hoort-de-vulling-van-een-vleeskroket-nu-met-blokjes-of-draadjes.png?ex=65181394&is=6516c214&hm=f7b8e0d16f375fedab55a868692841136062a3e194c4faa2a27347fb91dd659a&" width="290" height="280" /></div>
+            <div class="card-body">
+                <h4 class="card-title">Kroket</h4>
+                <p class="card-text">wist je dat We eten zo’n 300 miljoen (!) kroketten per jaar eten</p>
+                <a class="nav-link text-light" asp-area="" asp-controller="Menu" asp-action="Index"><button class="btn btn-secondary my-2 my-sm-0 bg-danger" type="submit">Ga naar menu </button> </a>
+            </div>
+        </div>
+    </div>
+    <p>
+        Bij ons draait alles om smaak, kwaliteit en een glimlach.
+        Stap binnen en laat je zintuigen verwennen door de heerlijke geur van versgebakken friet en knapperige snacks.
+        Onze passie voor lekker eten en gastvrijheid staat centraal, en we streven ernaar om je een onvergetelijke ervaring te bieden.
+    </p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer class="border-top footer text-black" style="color:white">
+        <h2 class="w3-wide w3-center" style="color:white">CONTACT</h2>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom" style="color:white">
+                <p><i class="fa fa-map-marker" style="width:30px"></i> 6301JH Valkenburg aan de Geul, Nederland</p>
+                <i class="fa fa-phone" style="width:30px"></i> Phone: +31 06 11111111<br />
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: devèttigehanddook@gmail.com
+            </div>
+        </div>
+
+    </footer>
+
+</body>

@@ -1,0 +1,106 @@
+﻿@model IEnumerable<Pi4_MVC_Frituur_V3.Models.Orderregel>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    /* Voeg hier je stijlen toe voor de Afrekenpagina */
+</style>
+
+<body style="background-color: black; color: white">
+    <h1>Bevestig Je Bestelling</h1>
+    <div class="confirmation-container">
+
+
+        <h2>Selecteer je Bank</h2>
+        <select id="bank" name="bank">
+            <option value="0">-</option>
+            <option value="1">Rabobank</option>
+            <option value="2">ING</option>
+            <option value="3 Bank">SNS bank</option>
+            <option value="4">ABN AMRO</option>
+        </select>
+
+        <div class="items">
+        </div>
+        <hr>
+        <h3 id="total-price">Totaalprijs: € 0.00</h3>
+        <button class="btn btn-danger" onclick="bank" id="confirm-button">Betalen</button>
+    </div>
+
+    <script>
+        // Haal de totale prijs op uit het lokale opslaggeheugen
+        var storedTotalPrice = localStorage.getItem("cartTotalPrice");
+
+        if (storedTotalPrice) {
+            // Als er een opgeslagen totale prijs is, gebruik deze om de totale prijs weer te geven
+            var totalPriceElement = document.querySelector("#total-price");
+            totalPriceElement.textContent = `Totaalprijs: € ${storedTotalPrice}`;
+        } else {
+            // Als er geen opgeslagen totale prijs is, geef een standaardwaarde weer
+            var totalPriceElement = document.querySelector("#total-price");
+            totalPriceElement.textContent = "Totaalprijs: Onbekend";
+        }
+
+        function  bank(){
+            if (bank.value == 0) {
+                alert("Je moet een bank selecteren");
+                window.location.href = '';
+            }
+        }
+
+
+        // Wanneer op de "Bevestig Bestelling" knop wordt geklikt
+        var confirmButton = document.querySelector("#confirm-button");
+        confirmButton.addEventListener("click", function () {
+            alert("Bedankt voor je bestelling!");
+            // localStorage.removeItem("cartItems"); // Optioneel: verwijder de winkelwagen uit het lokale opslaggeheugen als dat nodig is
+            localStorage.removeItem("cartTotalPrice"); // Verwijder de totaalprijs uit het lokale opslaggeheugen
+            // Navigeer naar een bedankpagina of een andere gewenste locatie
+            window.location.href = '../Orders/Index';
+
+            
+        });
+    </script>
+
+</body>
+
+@*
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Item)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item.Id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+*@

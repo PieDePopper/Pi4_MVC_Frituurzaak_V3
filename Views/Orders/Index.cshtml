@@ -1,0 +1,100 @@
+﻿@model IEnumerable<Pi4_MVC_Frituur_V3.Models.Order>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@*
+<h1>Bestelling</h1>
+<p>Dit zijn de geselecteerde items:</p>
+<ul id="orderedItemsList"></ul>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const listData = urlParams.get("list");
+
+    if (listData) {
+        // Decodeer de URL-gecodeerde lijst en splits deze in items
+        const cartItems = listData.split(',');
+
+        // Voeg de items toe aan de lijst op de "Orders" pagina
+        const orderedItemsList = document.getElementById('orderedItemsList');
+
+        cartItems.forEach(function (item) {
+            const li = document.createElement('li');
+            li.textContent = item;
+            orderedItemsList.appendChild(li);
+        });
+    }
+
+
+    var r = window.location.search;
+
+    
+</script>*@
+<body style="background-color: black; color: white">
+
+
+<div class="card border-danger mb-4 bg-black text-center mx-auto" style="max-width: 60rem;">
+        <div class="card-header"><h1>Bedankt voor de bestelling</h1></div>
+    <div class="card-body">
+        <h1 class="card-title">Zie uw unieke code:</h1>
+        <p class="card-text">
+        <h1 style=font-size:200px>
+                    <p id="demo"></p>
+        </h1>
+        
+
+        </p>
+</div>
+
+    <script>
+        document.getElementById("demo").innerHTML =
+            Math.floor(Math.random() * 100);
+    </script>
+
+
+
+
+        <button class="btn btn-danger"  onclick="window.location.href = '..';">
+            <h2>Terug naar HOME MENU</h2>
+        </button>
+        
+
+@*<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderregelId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Customer)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderregelId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Customer.Id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+*@
+</body>
