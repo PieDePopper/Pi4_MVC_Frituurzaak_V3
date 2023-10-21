@@ -522,13 +522,114 @@ Ik heb ook een tweede actie geïmplementeerd om het item daadwerkelijk te verwij
 
 
 3.1.Weergave Pagina’s
-Home Pagina
 
-Op de Home pagina van de applicatie word je welkom geheten met een vriendelijk welkomstbericht. Boven aan de pagina bevindt zich een handige navigatiebalk waarmee je kunt schakelen tussen verschillende secties van de applicatie.
-Een van de beschikbare opties in de navigatiebalk is "Items". Wanneer je op "Items" klikt, word je naar een overzichtspagina geleid waar alle beschikbare items worden weergegeven. Voor elk item wordt zowel de naam als de prijs getoond, waardoor je snel een idee krijgt van wat elk item vertegenwoordigt.
-Items Pagina
+Dit document bevat een overzicht van de verschillende pagina's in de Frituurapplicatie, samen met hun functies en toegangsvereisten. De Frituurapplicatie is ontworpen om zowel klanten als eigenaren van de frituur te ondersteunen. Hieronder volgt een beschrijving van de pagina's en hun functionaliteiten:
 
-Naast de itemgegevens zie je ook actieknoppen, zoals "Edit", "Details" en "Delete". Deze knoppen bieden de mogelijkheid om specifieke acties uit te voeren voor elk item. Als je op "Edit" klikt, kun je de details van het item aanpassen. Als je op "Details" klikt, kun je gedetailleerde informatie over het item bekijken. En als je op "Delete" klikt, kun je het item permanent uit het systeem verwijderen.
+
+3.1.1 Home Pagina
+ 
+De startpagina van de Frituurapplicatie verwelkomt bezoekers met een dynamische slideshow. Deze slideshow toont om de 5 seconden verschillende slides met afbeeldingen en tekst. Op de slides worden verschillende aanbiedingen, promoties en welkomstberichten weergegeven. Deze aantrekkelijke presentatie is bedoeld om klanten te enthousiasmeren en ze te verleiden om verder te verkennen.
+
+In de navigatiebalk bovenaan de pagina zijn verschillende opties beschikbaar, waaronder:
+
+Home: Hiermee kunnen gebruikers altijd terugkeren naar de startpagina.
+Menu: Klanten kunnen op deze pagina het volledige menu van de frituur bekijken. Producten worden georganiseerd in categorieën en worden weergegeven met prijzen en beschrijvingen.
+Bestellen: Deze pagina stelt klanten in staat om producten uit het menu toe te voegen aan hun winkelwagen en een bestelling te plaatsen.
+Eigenaar Opties: Dit gedeelte is alleen toegankelijk voor de eigenaar van de frituur. Hier kan de eigenaar het assortiment beheren en de API van de applicatie inzien.
+Onder de slideshow op de startpagina worden de populaire producten van de week gepresenteerd. Dit geeft klanten inzicht in welke items momenteel het meest in trek zijn.
+De contactinformatie van de frituur is toegankelijk via de "Contact" sectie onder de populaire producten op de startpagina. Hier kunnen bezoekers belangrijke informatie vinden, zoals:
+
+Openingstijden: De tijden waarop de frituur geopend is, zodat klanten weten wanneer ze een bestelling kunnen plaatsen of hun favoriete snacks kunnen halen.
+Adres: Het fysieke adres van de frituur, zodat klanten weten waar ze naartoe moeten.
+Telefoonnummer: Een telefoonnummer waarmee klanten direct contact kunnen opnemen met de frituur voor vragen of bestellingen.
+E-mailadres: Een e-mailadres voor klanten die de frituur liever via e-mail willen bereiken.
+Dit gedeelte is bedoeld om klanten de benodigde informatie te verschaffen om contact op te nemen met de frituur, ongeacht of ze vragen hebben over het menu, openingstijden of andere zaken.
+
+ 
+  
+Onder de slideshow op de startpagina worden de populaire producten van de week gepresenteerd. Dit geeft klanten inzicht in welke items momenteel het meest in trek zijn. 
+ 
+  
+De contactinformatie van de frituur is toegankelijk via de "Contact" sectie onder de populaire producten op de startpagina. Hier kunnen bezoekers belangrijke informatie vinden, zoals: 
+Openingstijden: De tijden waarop de frituur geopend is, zodat klanten weten wanneer ze een bestelling kunnen plaatsen of hun favoriete snacks kunnen halen. 
+Adres: Het fysieke adres van de frituur, zodat klanten weten waar ze naartoe moeten. 
+Telefoonnummer: Een telefoonnummer waarmee klanten direct contact kunnen opnemen met de frituur voor vragen of bestellingen. 
+E-mailadres: Een e-mailadres voor klanten die de frituur liever via e-mail willen bereiken. 
+Dit gedeelte is bedoeld om klanten de benodigde informatie te verschaffen om contact op te nemen met de frituur, ongeacht of ze vragen hebben over het menu, openingstijden of andere zaken. 
+
+ 
+ 3.1.2.Menu-Pagina 
+ 
+ 
+ 
+De Menu-pagina van de Frituurapplicatie biedt een overzicht van alle beschikbare producten, samen met hun prijzen. De pagina toont een lijst met producten met een productbeschrijving in het midden en de prijs rechts. Hier kunnen klanten eenvoudig door de beschikbare items bladeren, de productbeschrijvingen lezen en de prijzen bekijken voordat ze een keuze maken. 
+Dit gedeelte van de applicatie is ontworpen om het klanten gemakkelijk te maken om te vinden wat ze willen bestellen. Het gebruiksvriendelijke ontwerp en de duidelijke presentatie van producten en prijzen stellen klanten in staat om snel hun keuzes te maken. De "Menu" -pagina draagt bij aan een soepele en aantrekkelijke winkelervaring voor de gebruikers. 
+ 
+3.1.3.Bestel Pagina 
+ 
+ 
+Bij aankomst op de Bestel-pagina worden klanten begroet met een overzicht van hun huidige bestelling. Hier kunnen ze alle geselecteerde items, samen met hun prijzen en de hoeveelheid van elk item in hun winkelwagen, in één oogopslag zien. Dit overzicht is een handige manier om ervoor te zorgen dat alles correct is voordat de bestelling wordt geplaatst. 
+ 
+  
+De Bestel-pagina biedt klanten volledige controle over hun bestelling. Als ze een ander product willen toevoegen, kunnen ze door de lijst met beschikbare producten bladeren en eenvoudigweg de gewenste items aan hun winkelwagen toevoegen. Onmiddellijk wordt de winkelwagen automatisch bijgewerkt om de nieuwe selectie te weerspiegelen. 
+Klanten hebben de flexibiliteit om hun bestelling aan te passen. Soms veranderen ze van gedachten of selecteren ze per ongeluk het verkeerde item. Met slechts een paar klikken kunnen klanten producten verwijderen uit hun winkelwagen, waardoor ze de volledige controle hebben over hun bestelproces. 
+De Bestel-pagina biedt klanten de mogelijkheid om kortingscodes in te voeren. Klanten kunnen hun kortingscode invoeren en het systeem valideert de code. Eventuele kortingen worden onmiddellijk toegepast op de totale bestelling, waardoor klanten kunnen profiteren van aanbiedingen en deals. 
+De totale prijs wordt altijd duidelijk weergegeven op de Bestel-pagina, zodat klanten altijd de huidige kosten van hun bestelling kunnen controleren. 
+  
+Na het selecteren van de gewenste items en eventuele kortingen, kunnen klanten doorgaan naar de bevestigingspagina. Hier kunnen ze: 
+Bank Kiezen: Klanten kiezen hun bank voor betaling. Er is een selectie van beschikbare banken om uit te kiezen. 
+Totaalprijs Controleren: Klanten krijgen een laatste overzicht van hun bestelling en de totaalprijs voordat ze doorgaan. 
+Bestelling Bevestigen: Zodra klanten tevreden zijn met hun bestelling, kunnen ze deze bevestigen. 
+  
+Na het bevestigen van de bestelling worden klanten doorverwezen naar een nieuwe pagina waar ze hun unieke ophaalnummer ontvangen. Dit nummer zal hen helpen bij het afhalen van hun bestelling. Ook is er een knop beschikbaar waarmee klanten eenvoudig kunnen terugkeren naar de homepagina. 
+
+
+
+
+
+
+3.1.4. Eigenaar opties 
+ 3.1.4.1.Items Pagina 
+ 
+ 
+De eigenaar van de frituur kan eenvoudig naar de Items-pagina navigeren door in te loggen op het eigenaarsaccount en vanuit het dashboard of het navigatiemenu de "Items" -optie te selecteren. 
+Bij het openen van de Items-pagina wordt de eigenaar begroet met een lijst van alle beschikbare producten in het assortiment. Elke vermelding omvat de naam van het product, een beschrijving, de huidige prijs en een afbeelding van het item. 
+De eigenaar heeft volledige controle over de items in het assortiment. Hij/zij kan: 
+Toevoegen van Items: Er is een duidelijke optie om nieuwe items toe te voegen aan het assortiment. Hier kan de eigenaar productinformatie invullen, zoals naam, beschrijving en de prijs van het product. 
+Bewerken van Items: Bestaande items kunnen eenvoudig worden bewerkt. De eigenaar kan bijvoorbeeld de naam, beschrijving of prijs bijwerken. 
+Verwijderen van Items: Als een product niet langer beschikbaar is of uit het assortiment moet worden verwijderd, kan de eigenaar ervoor kiezen om het item te verwijderen. 
+De Items-pagina is ontworpen met gebruiksgemak in gedachten. Alle acties zijn intuïtief en toegankelijk. De eigenaar kan snel wijzigingen aanbrengen en het assortiment aanpassen aan de behoeften van de frituur. 
+ 
+3.1.4.2.API inzien 
+Om toegang te krijgen tot de API-functionaliteit, kunnen eigenaars de "Eigenaar Opties" selecteren in het navigatiemenu. Binnen dit menu vinden ze een optie genaamd "API," waarmee ze toegang krijgen tot de API van de applicatie. 
+De gedetailleerde documentatie voor de API-functionaliteit binnen de Frituurapplicatie is te vinden in Hoofdstuk 3.2, waarin alle beschikbare eindpunten, verzoeken en responsen in detail worden beschreven. 
+ 
+3.1.5. Login en Registratie-Pagina 
+Het login- en registratiegedeelte van de Frituurapplicatie biedt gebruikers de mogelijkheid om toegang te krijgen tot hun persoonlijke accounts en om nieuwe accounts aan te maken. Dit hoofdstuk beschrijft de login- en registratiefunctionaliteit en hoe deze wordt aangeboden in de applicatie. 
+3.1.5.1.Login Pagina 
+  
+De loginpagina stelt bestaande gebruikers in staat om in te loggen op hun accounts door de volgende stappen te volgen: 
+Email en Wachtwoord: Gebruikers moeten hun geregistreerde e-mailadres en wachtwoord invoeren. 
+Inloggen: Na het invoeren van de vereiste gegevens kunnen gebruikers op de "Inloggen" knop klikken om toegang te krijgen tot hun account. 
+Wachtwoord Vergeten: Als gebruikers hun wachtwoord zijn vergeten, kunnen ze op de "Wachtwoord vergeten" link klikken om instructies te ontvangen voor het herstellen van hun wachtwoord. 
+ 
+3.1.5.2.Registratie Pagina 
+  
+Nieuwe gebruikers kunnen zich registreren voor een account met behulp van de volgende stappen: 
+Registratieformulier: Gebruikers moeten persoonlijke informatie verstrekken waaronder hun e-mailadres en een wachtwoord. 
+ Account Aanmaken: Na het invoeren van de vereiste informatie kunnen ze op de "Account aanmaken" knop klikken om hun account aan te maken. 
+ 
+Bevestiging: Na registratie wordt een bevestigingspagina weergegeven om gebruikers te vragen hun e-mailadres te bevestigen. 
+ 
+ 3.1.5.3.Profiel Pagina 
+ 
+Eenmaal ingelogd kunnen gebruikers hun persoonlijke profiel beheren. Ze hebben toegang tot de volgende functionaliteiten: 
+ 
+Profielgegevens: Gebruikers kunnen hun profielgegevens, zoals hun naam en contactinformatie, bekijken en bijwerken. 
+E-mail Adres: Het geregistreerde e-mailadres kan worden gewijzigd indien nodig. 
+Wachtwoord Wijzigen: Gebruikers hebben de mogelijkheid om hun wachtwoord te wijzigen voor beveiligingsdoeleinden. 
+Uitloggen: Gebruikers kunnen op elk moment uitloggen om hun sessie te beëindigen. 
+
 
 3.2.API
 Dit deelhoofdstuk biedt gedetailleerde documentatie voor de API die beschikbaar is binnen de Frituurapplicatie. De API stelt ontwikkelaars in staat om menu-items te beheren en biedt diverse functionaliteiten met betrekking tot producten, prijzen, en beschrijvingen. Het beschrijft in dit geval de API_ItemsController en geeft aan dat deze is ingebouwd in de MVC-applicatie, zonder de noodzaak van een afzonderlijk project. Bovendien wordt benadrukt dat de API-documentatie toegankelijk is via SwaggerUI.
